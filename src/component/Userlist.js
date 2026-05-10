@@ -9,8 +9,9 @@ useEffect(()=>{
 },[]);
 
 const getUsers = async () =>{
-    const response = await axios.get('https://spring-boot-app1.onrender.com/user/list');
+    const response = await axios.get('https://spring-boot-app2.onrender.com/user/list');
     console.log(response.data);
+    setUser(response.data);
 }
 
   return (
@@ -22,18 +23,25 @@ const getUsers = async () =>{
                     <th>No</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Gender</th>
-                    <th>Action</th>
+                    <th>Requirement</th>
+                    <th>Description</th>
+                    <th>Type Business</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                {users.map((user,index) => (
+                    <tr key={user.id}>
+                    <td>{index + 1}</td>
+                    <td>{user.username}</td>
+                    <td>{user.email}</td>
+                    <td>{user.requirement}</td> 
+                    <td>{user.desc}</td>
+                    <td>{user.type}</td>
+                    <td>{user.status}</td>
                 </tr>
+                ))}
+                
             </tbody>
         </table>
     </div>
