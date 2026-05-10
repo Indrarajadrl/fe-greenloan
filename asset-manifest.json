@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fe-greenloan/static/css/main.d5e55347.css",
-    "main.js": "/fe-greenloan/static/js/main.aece25ac.js",
+    "main.js": "/fe-greenloan/static/js/main.7adea385.js",
     "index.html": "/fe-greenloan/index.html",
     "main.d5e55347.css.map": "/fe-greenloan/static/css/main.d5e55347.css.map",
-    "main.aece25ac.js.map": "/fe-greenloan/static/js/main.aece25ac.js.map"
+    "main.7adea385.js.map": "/fe-greenloan/static/js/main.7adea385.js.map"
   },
   "entrypoints": [
     "static/css/main.d5e55347.css",
-    "static/js/main.aece25ac.js"
+    "static/js/main.7adea385.js"
   ]
 }
